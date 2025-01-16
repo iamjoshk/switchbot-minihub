@@ -12,7 +12,7 @@ Used FTDI USB to serial HW-475
 
 On the hub:
 - Jumped GPIO0 to GND
-- Jumped RST to TXS
+
 
 - FTDI already connected to computer
 - Plug micro USB in for power
@@ -20,3 +20,5 @@ On the hub:
 In putty:
 - baud: 115200
 - logging: printable output
+
+And then I broke the micro usb port on the board and discovered that my FTDI is only supplying 2.8v from the 3.3v pin.
